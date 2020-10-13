@@ -1,0 +1,37 @@
+<div class="row">
+  <button
+    class="ml-3"
+    mat-button
+    (click)="onCreateTopicClick()"
+  >Create new topic</button>
+</div>
+
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Topic</th>
+      <th scope="col">Author</th>
+      <th scope="col">Created</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr
+      *ngFor="let topic of topics"
+      (click)="onTopicClick(topic.id)"
+    >
+      <th scope="row">
+        {{topic.id}}
+      </th>
+      <td>
+        {{topic.content}}
+      </td>
+      <td>
+        {{topic.author}}
+      </td>
+      <td>
+        {{topic.creationDate}}
+      </td>
+    </tr>
+  </tbody>
+</table>

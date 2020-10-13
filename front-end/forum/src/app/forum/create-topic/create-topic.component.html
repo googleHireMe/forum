@@ -1,0 +1,26 @@
+<form [formGroup]="form">
+  <mat-form-field
+    class="col"
+    appearance="standard"
+  >
+    <mat-label>Content</mat-label>
+    <textarea
+      formControlName="content"
+      class="content-input"
+      matInput
+      cdkTextareaAutosize
+      cdkAutosizeMinRows="1"
+      cdkAutosizeMaxRows="1000"
+      placeholder="Placeholder"
+    ></textarea>
+  </mat-form-field>
+
+  <button
+    mat-button
+    (click)="submit()"
+    [disabled]="!form.valid"
+  >
+    Create
+  </button>
+
+</form>
