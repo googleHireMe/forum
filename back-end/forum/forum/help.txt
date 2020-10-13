@@ -1,0 +1,10 @@
+﻿//Database server for managment studio:
+(LocalDb)\MSSQLLocalDB
+
+//First add migration
+dotnet ef migrations add IdentityInitial --context IdentityContext --verbose
+dotnet ef migrations add ForumInitial --context ForumContext --verbose
+
+//Update context
+dotnet ef database update --context IdentityContext
+dotnet ef database update --context ForumContext
