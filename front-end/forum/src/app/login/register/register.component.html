@@ -1,0 +1,51 @@
+<div class="d-flex h-100 justify-content-center">
+  <div class="col-4 align-self-center">
+    <div class="card">
+      <div class="card-body">
+        <form [formGroup]="form">
+          <mat-form-field
+            appearance="standard"
+            class="col"
+          >
+            <mat-label>Login</mat-label>
+            <input
+              formControlName="login"
+              matInput
+              placeholder="Login"
+              autocomplete="off"
+            >
+          </mat-form-field>
+
+          <mat-form-field
+            appearance="standard"
+            class="col"
+          >
+            <mat-label>Password</mat-label>
+            <input
+              formControlName="password"
+              matInput
+              placeholder="Password"
+              autocomplete="off"
+            >
+          </mat-form-field>
+
+          <div class="float-right">
+            <button
+              mat-button
+              (click)="cancel()"
+            >
+              Cancel
+            </button>
+            <button
+              mat-button
+              (click)="submit()"
+            >
+              Register
+            </button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

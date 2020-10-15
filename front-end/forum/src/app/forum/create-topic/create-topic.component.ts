@@ -7,7 +7,7 @@ import { BaseDestroyableComponent } from 'src/app/core/base-classes/base-destroy
   templateUrl: './create-topic.component.html',
   styleUrls: ['./create-topic.component.scss']
 })
-export class CreateTopicComponent extends BaseDestroyableComponent implements OnDestroy {
+export class CreateTopicComponent extends BaseDestroyableComponent implements OnInit, OnDestroy {
 
   form: FormGroup;
 
