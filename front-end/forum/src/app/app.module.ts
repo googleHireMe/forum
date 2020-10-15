@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ForumModule } from './forum/forum.module';
 import { MaterialModule } from './material/material.module';
 import { LoginModule } from './login/login.module';
+import { CoreModule } from './core/core.module';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { LoginModule } from './login/login.module';
     AppRoutingModule,
     BrowserAnimationsModule,
     ForumModule,
-    LoginModule
+    LoginModule,
+    CoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]

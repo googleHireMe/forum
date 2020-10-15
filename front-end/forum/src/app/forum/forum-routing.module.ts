@@ -7,7 +7,7 @@ import { TopicComponent } from './topic/topic.component';
 
 const routes: Routes = [
   {
-    path: 'forum',
+    path: '',
     component: ScreenComponent,
     children: [
       {
